@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_300">#BF52ED</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+
+    <color name="textColorPrimary">#000000</color>
+
+    <color name="textColorSecondary">#FFFFFF</color>
+    <color name="hintTextColorPrimary">#AAAAAA</color>
+    <color name="hintTextColorSecondary">#DDDDDD</color>
+    
+    <color name="color_auth_bg">#DAFFFFFF</color>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="statusBarColor">#01000000</color>
+    <color name="colorGray">#707070</color>
+    <color name="colorLowGray">#7E7E7E</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteGray">#E4E4E4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#1E692C</color>
+    <color name="colorHint">#707070</color>
+    <color name="colorGreenBottomNav">#2ecc71</color>
+    <color name="colorGreenBottomNav1">#AA3311</color>
+    <color name="colorGreenBottomNav2">#CC22EE</color>
+    <color name="colorGreenBottomNav3">#FF2245</color>
+    <color name="colorRed">#FF2245</color>
+    <color name="colorPink">#FB6E95</color>
+
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorBorder">#99caff</color>
+    <color name="colorBlue">#2196F3</color>
+    <color name="colorBlue200">#40C4FF</color>
+    <color name="colorShimmer">#dddddd</color>
+    <color name="colorYellow">#FFC107</color>
+    <color name="colorGrey">#8C8981</color>
+
+    <color name="gray_200">#4De0e0e0</color>
+    <color name="black_80">#CC000000</color>
+    <color name="green">#056608</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#FF939393</color>
+
+</resources>
