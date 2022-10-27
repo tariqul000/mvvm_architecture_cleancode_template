@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.simec.alet"
+    package="com.tariqul.alet"
    >
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,7 +10,7 @@
 
 
     <application
-        android:name=".presentation.MyApp"
+        android:name="com.tariqul.alet.presentation.MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -24,13 +24,13 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="33">
         <activity
-            android:name=".presentation.activities.main.MainActivity"
+            android:name="com.tariqul.alet.presentation.activities.main.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Alet.NoActionBar">
         </activity>
         <activity
-            android:name=".presentation.activities.auth.AuthActivity"
+            android:name="com.tariqul.alet.presentation.activities.auth.AuthActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Alet.NoActionBar">

@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.simec.alet.presentation.fragment.auth.LoginFragment"
+        android:name="com.tariqul.alet.presentation.fragment.auth.LoginFragment"
         android:label="@string/login">
 
     </fragment>

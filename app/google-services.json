@@ -41,6 +41,43 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24236243747:android:c31d5d7227d9f918cbea96",
+        "android_client_info": {
+          "package_name": "com.tariqul.alet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24236243747-g0bcn2ktb5jcq00uuoigocghnhn6p6k8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tariqul.alet",
+            "certificate_hash": "a87bc4715f38037fb477c703cfa3e59a676bc40e"
+          }
+        },
+        {
+          "client_id": "24236243747-rl6j7crlionbsj86vuork0uirkdu0f97.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjxxxv-DQBdfC2BeJn1SfNnYvoYNyMFCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24236243747-rl6j7crlionbsj86vuork0uirkdu0f97.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"

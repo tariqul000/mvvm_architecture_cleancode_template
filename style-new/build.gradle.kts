@@ -5,7 +5,7 @@ plugins {
 
 android {
 
-    namespace = "com.simec.alet"
+    namespace = "com.tariqul.alet"
     compileSdk = 32
 
     defaultConfig {
