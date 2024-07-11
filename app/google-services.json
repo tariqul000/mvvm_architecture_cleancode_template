@@ -1,81 +1,26 @@
 {
   "project_info": {
-    "project_number": "24236243747",
-    "project_id": "alet-7405e",
-    "storage_bucket": "alet-7405e.appspot.com"
+    "project_number": "770679203380",
+    "project_id": "gfs-japan",
+    "storage_bucket": "gfs-japan.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:24236243747:android:a010752d8cceccd2cbea96",
+        "mobilesdk_app_id": "1:770679203380:android:403df12a6da630999f0c61",
         "android_client_info": {
-          "package_name": "com.simec.alet"
+          "package_name": "com.simec.gfs"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "24236243747-3nq5vsi1h5dobtg0ej4et38p21hdtuea.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.simec.alet",
-            "certificate_hash": "a87bc4715f38037fb477c703cfa3e59a676bc40e"
-          }
-        },
-        {
-          "client_id": "24236243747-rl6j7crlionbsj86vuork0uirkdu0f97.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCjxxxv-DQBdfC2BeJn1SfNnYvoYNyMFCw"
+          "current_key": "AIzaSyAgIyW-6PQaMcVnHQfzhv2kS6Tl3Ve2cxI"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "24236243747-rl6j7crlionbsj86vuork0uirkdu0f97.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:24236243747:android:c31d5d7227d9f918cbea96",
-        "android_client_info": {
-          "package_name": "com.tariqul.alet"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "24236243747-g0bcn2ktb5jcq00uuoigocghnhn6p6k8.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.tariqul.alet",
-            "certificate_hash": "a87bc4715f38037fb477c703cfa3e59a676bc40e"
-          }
-        },
-        {
-          "client_id": "24236243747-rl6j7crlionbsj86vuork0uirkdu0f97.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCjxxxv-DQBdfC2BeJn1SfNnYvoYNyMFCw"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "24236243747-rl6j7crlionbsj86vuork0uirkdu0f97.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

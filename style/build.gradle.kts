@@ -21,15 +21,16 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
     buildFeatures {
         viewBinding = true
     }
+    namespace = "com.simec.gfs.style"
 }
 
- setupCommonDependencies()
+setupCommonDependencies()
 
 dependencies {
     implementation(Google.android.material)

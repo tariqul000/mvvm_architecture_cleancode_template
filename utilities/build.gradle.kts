@@ -21,12 +21,13 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
     buildFeatures {
         viewBinding = true
     }
+    namespace = "com.simec.gfs.utilities"
 }
 
 setupCommonDependencies()
@@ -42,6 +43,7 @@ dependencies {
     implementation(AndroidX.appCompat)
     implementation(AndroidX.core.ktx)
     implementation(AndroidX.activity.ktx)
+    // implementation(project(mapOf("path" to ":app")))
 
     useNavigation()
 

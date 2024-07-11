@@ -27,12 +27,13 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
+        jvmTarget = JavaVersion.VERSION_11.toString()
     }
 
     buildFeatures {
         viewBinding = true
     }
+    namespace = "com.simec.gfs.extensions"
 }
 
 setupCommonDependencies()
@@ -40,7 +41,6 @@ setupCommonDependencies()
 dependencies {
 
     implementation(project(mapOf("path" to ":style")))
-//
     implementation(Google.Android.material)
     implementation(AndroidX.appCompat)
     implementation(AndroidX.core.ktx)

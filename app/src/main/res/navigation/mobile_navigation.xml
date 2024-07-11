@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.tariqul.alet.presentation.fragment.home.HomeFragment"
+        android:name="com.simec.gfs.presentation.fragment.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="com.tariqul.alet.presentation.fragment.gallery.GalleryFragment"
+        android:name="com.simec.gfs.presentation.fragment.gallery.GalleryFragment"
         android:label="@string/menu_gallery"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="com.tariqul.alet.presentation.fragment.slideshow.SlideshowFragment"
+        android:name="com.simec.gfs.presentation.fragment.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
