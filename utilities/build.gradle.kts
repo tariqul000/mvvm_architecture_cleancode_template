@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -20,14 +22,22 @@ android {
         unitTests.isIncludeAndroidResources = true
     }
 
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_17)
+        }
+    }
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(17))
+        }
     }
 
     buildFeatures {
         viewBinding = true
     }
-    namespace = "com.simec.gfs.utilities"
+    namespace = "com.irinfosys.glafitES.utilities"
 }
 
 setupCommonDependencies()

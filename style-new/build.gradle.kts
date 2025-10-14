@@ -5,12 +5,12 @@ plugins {
 
 android {
 
-    namespace = "com.simec.gfs"
-    compileSdk = 34
+    namespace = "com.irinfosys.glafitES"
+    compileSdk = 36
 
     defaultConfig {
         minSdk = 22
-        targetSdk = 34
+        targetSdk = 36
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -25,12 +25,9 @@ android {
             )
         }
     }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
+    ompilerOptions {
+        jvmTarget.set(JvmTarget.JVM_17)
+        freeCompilerArgs.add("-Xjvm-default=all")
     }
 }
 

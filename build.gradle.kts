@@ -11,15 +11,15 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:8.2.2")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
+        classpath("com.android.tools.build:gradle:8.13.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.2.0")
         classpath(Google.playServicesGradlePlugin) // Google Services plugin
         classpath(Google.firebase.crashlyticsGradlePlugin)
-        classpath("com.google.dagger:hilt-android-gradle-plugin:2.43.2")
+        classpath("com.google.dagger:hilt-android-gradle-plugin:2.57.2")
         classpath(AndroidX.navigation.safeArgsGradlePlugin)
         classpath("com.squareup:javapoet:1.13.0")
-        classpath("com.google.gms:google-services:4.4.0")
-        classpath("com.google.firebase:firebase-appdistribution-gradle:4.0.1")
+        classpath("com.google.gms:google-services:4.4.4")
+        classpath("com.google.firebase:firebase-appdistribution-gradle:5.1.1")
         //classpath("com.github.triplet.gradle:play-publisher:4.0.0-SNAPSHOT")
 
     }
@@ -27,7 +27,7 @@ buildscript {
 
 plugins {
     // other plugins...
-    id("com.google.dagger.hilt.android") version("2.43.2") apply false
+    id("com.google.dagger.hilt.android") version("2.57.2") apply false
 }
 
 allprojects {

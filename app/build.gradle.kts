@@ -1,3 +1,4 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import java.util.Properties
 
 plugins {
@@ -26,7 +27,7 @@ android {
     configCommon()
 
     defaultConfig {
-        applicationId = "com.simec.gfs"
+        applicationId = "com.irinfosys.glafitES"
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -96,25 +97,27 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
 
     }
 
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions {
-            jvmTarget = "11"
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_17)
         }
     }
-    kotlinOptions {
-        jvmTarget = "11"
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(17))
+        }
     }
 
     buildFeatures {
         viewBinding = true
         buildConfig = true
     }
-    namespace = "com.simec.gfs"
+    namespace = "com.irinfosys.glafitES"
     bundle {
         language {
             enableSplit = false
@@ -134,9 +137,9 @@ setupCommonDependencies()
 //}
 
 dependencies {
-    implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.11.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.appcompat:appcompat:1.7.1")
+    implementation("com.google.android.material:material:1.13.0")
+    implementation("androidx.constraintlayout:constraintlayout:2.2.1")
 
     useNavigation()
     useRoom()
@@ -146,7 +149,7 @@ dependencies {
     implementation ("androidx.cardview:cardview:1.0.0")
 
     // Paging
-    implementation ("androidx.paging:paging-runtime-ktx:2.1.2")
+    implementation ("androidx.paging:paging-runtime-ktx:3.3.6")
 
 // Chart and graph library
     implementation ("com.github.blackfizz:eazegraph:1.2.5l@aar")
@@ -158,18 +161,18 @@ dependencies {
     implementation(project(mapOf("path" to ":extensions")))
     implementation(project(mapOf("path" to ":style")))
     implementation(project(mapOf("path" to ":utilities")))
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation ("com.github.bumptech.glide:glide:4.16.0")
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.2.2")
+    implementation("androidx.core:core-ktx:1.17.0")
+    implementation ("com.github.bumptech.glide:glide:5.0.5")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.9.0")
 
     //Room Library
-    implementation ("androidx.room:room-runtime:2.6.1")
-    implementation ("androidx.room:room-ktx:2.6.1")
-    kapt ("androidx.room:room-compiler:2.6.1")
+    implementation ("androidx.room:room-runtime:2.8.2")
+    implementation ("androidx.room:room-ktx:2.8.2")
+    kapt ("androidx.room:room-compiler:2.8.2")
 
     // Coroutines for asynchronous programming
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.10.2")
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
     //implementation ("com.github.mhiew:android-pdf-viewer:3.2.0-beta.1")
 
 

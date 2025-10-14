@@ -1,7 +1,10 @@
 import com.android.build.gradle.BaseExtension
 import org.gradle.api.JavaVersion
 import org.gradle.api.plugins.ExtensionAware
-import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension
+import org.jetbrains.kotlin.gradle.dsl.KotlinJvmCompilerOptions
+import org.gradle.api.Project
 
 fun BaseExtension.setSdkVersions() {
     compileSdkVersion(Versions.Android.sdk)
@@ -20,12 +23,17 @@ fun BaseExtension.createBuildTypes() {
     }
 }
 
-fun BaseExtension.setJvmVersions() {
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
 
-    val kotlinJvmOptions = (this as ExtensionAware).extensions.getByName("kotlinOptions") as KotlinJvmOptions
-    kotlinJvmOptions.jvmTarget = "11"
-}
+//
+//fun Project.setJvmVersions(android: CommonExtension<*, *, *, *>) {
+//    // ✅ Configure Java compile options
+//    android.compileOptions {
+//        sourceCompatibility = JavaVersion.VERSION_11
+//        targetCompatibility = JavaVersion.VERSION_11
+//    }
+//
+//    // ✅ Configure Kotlin compiler options (new DSL)
+//    extensions.findByType(KotlinAndroidProjectExtension::class.java)?.apply {
+//        compilerOptions.jvmTarget.set(JvmTarget.JVM_11)
+//    }
+//}

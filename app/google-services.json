@@ -1,15 +1,15 @@
 {
   "project_info": {
     "project_number": "770679203380",
-    "project_id": "gfs-japan",
-    "storage_bucket": "gfs-japan.appspot.com"
+    "project_id": "glafitES-japan",
+    "storage_bucket": "glafitES-japan.appspot.com"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:770679203380:android:403df12a6da630999f0c61",
         "android_client_info": {
-          "package_name": "com.simec.gfs"
+          "package_name": "com.irinfosys.glafitES"
         }
       },
       "oauth_client": [],

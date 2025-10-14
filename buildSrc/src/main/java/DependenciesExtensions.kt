@@ -17,8 +17,8 @@ fun DependencyHandlerScope.useNavigation() {
 }
 
 fun DependencyHandlerScope.useHilt() {
-    implementation("com.google.dagger:hilt-android:2.43.2")
-    kapt("com.google.dagger:hilt-compiler:2.43.2")
+    implementation("com.google.dagger:hilt-android:2.57.2")
+    kapt("com.google.dagger:hilt-compiler:2.57.2")
 //    implementation("androidx.hilt:hilt-work:1.0.0")
 //    implementation(AndroidX.hilt.work)
 //    kapt("androidx.hilt:hilt-compiler:1.0.0")

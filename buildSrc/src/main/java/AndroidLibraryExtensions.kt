@@ -4,7 +4,7 @@ fun LibraryExtension.configCommon() {
 
     setSdkVersions()
     createBuildTypes()
-    setJvmVersions()
+    //setJvmVersions()
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

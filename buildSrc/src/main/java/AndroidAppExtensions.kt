@@ -4,7 +4,7 @@ fun AppExtension.configCommon() {
 
     setSdkVersions()
     createBuildTypes()
-    setJvmVersions()
+    //setJvmVersions(android)
 
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"

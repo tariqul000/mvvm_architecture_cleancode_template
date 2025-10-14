@@ -2,7 +2,6 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.*
 import com.android.build.gradle.BaseExtension
 import org.gradle.api.plugins.ExtensionAware
-import org.jetbrains.kotlin.gradle.dsl.KotlinJvmOptions
 import com.android.build.gradle.internal.tasks.factory.dependsOn
 
 fun Project.setupCommonDependencies() {
@@ -31,15 +30,15 @@ fun Project.setupCommonDependencies() {
 /**
  * Fix Kotlin Module (eg: META-INF/library_debug.kotlin_module) Naming Duplication Problem.
  */
-fun Project.fixKotlinModuleFileNameConflict() {
-    val android = extensions.getByName("android")
-    if (android is BaseExtension) {
-        val kotlinJvmOptions = (android as ExtensionAware).extensions.getByName("kotlinOptions") as KotlinJvmOptions
-        kotlinJvmOptions.freeCompilerArgs +=
-            listOf("-module-name", path.replaceFirst(":", "")
-                .replace(":", "-"))
-    }
-}
+//fun Project.fixKotlinModuleFileNameConflict() {
+//    val android = extensions.getByName("android")
+//    if (android is BaseExtension) {
+//        val kotlinJvmOptions = (android as ExtensionAware).extensions.getByName("kotlinOptions") as KotlinJvmOptions
+//        kotlinJvmOptions.freeCompilerArgs +=
+//            listOf("-module-name", path.replaceFirst(":", "")
+//                .replace(":", "-"))
+//    }
+//}
 
 fun Project.generateNavArgsProguardRules() {
     tasks {
